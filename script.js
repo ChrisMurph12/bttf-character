@@ -38,13 +38,13 @@ let currentQuestionIndex = 0;
 
 function nextQuestion(answer) {
     const currentCharacter = characters[answer];
-    if (currentQuestionIndex < questions.length - 1) {
-        document.getElementById(`question-container-${currentQuestionIndex + 1}`).style.display = 'none';
-        document.getElementById(`question-container-${currentQuestionIndex + 2}`).style.display = 'block';
-    } else if (currentQuestionIndex === questions.length - 1) {
+    document.getElementById(`question-container-${currentQuestionIndex + 1}`).style.display = 'none';
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        document.getElementById(`question-container-${currentQuestionIndex + 1}`).style.display = 'block';
+    } else {
         showResult(currentCharacter);
     }
-    currentQuestionIndex++;
 }
 
 function showResult(character) {
@@ -53,3 +53,4 @@ function showResult(character) {
     document.getElementById('result').innerText = `You got: ${character.name}`;
     document.getElementById('character-description').innerText = character.description;
 }
+
