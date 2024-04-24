@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Back to the Future Character are You?</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+  
+<body>
+    <header>
+        <h1>Which Back to the Future Character are You?</h1>
+    </header>
+          <div id="question-container">
+            <p id="question">Question 1: What is your favorite mode of transportation?</p>
+            <ul id="options">
+                <li onclick="nextQuestion('Marty')">DeLorean Time Machine</li>
+                <li onclick="nextQuestion('Doc')">Hoverboard</li>
+                <li onclick="nextQuestion('Biff')">Pickup Truck</li>
+                <li onclick="nextQuestion('George')">Bicycle</li>
+                <li onclick="nextQuestion('Lorraine')">Walking</li>
+            </ul>
+        </div>
+        <div id="result-container" style="display: none;">
+            <h2 id="result"></h2>
+            <p id="character-description"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
 
