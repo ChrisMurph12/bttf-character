@@ -37,14 +37,14 @@ const characters = {
 let currentQuestionIndex = 0;
 
 function nextQuestion(answer) {
+    const currentCharacter = characters[answer];
     if (currentQuestionIndex < questions.length - 1) {
-        const currentCharacter = characters[answer];
-        document.getElementById('question').innerText = `Question ${currentQuestionIndex + 2}: ${questions[currentQuestionIndex + 1]}`;
-        currentQuestionIndex++;
+        document.getElementById(`question-container-${currentQuestionIndex + 1}`).style.display = 'none';
+        document.getElementById(`question-container-${currentQuestionIndex + 2}`).style.display = 'block';
     } else if (currentQuestionIndex === questions.length - 1) {
-        const currentCharacter = characters[answer];
         showResult(currentCharacter);
     }
+    currentQuestionIndex++;
 }
 
 function showResult(character) {
