@@ -18,6 +18,8 @@ main {
 
 #question-container, #result-container {
     text-align: center;
+    margin: auto; /* Center the container */
+    width: 50%; /* Adjust width as needed */
 }
 
 #options {
@@ -37,4 +39,3 @@ main {
 #options li:hover {
     background-color: #e0e0e0;
 }
-
