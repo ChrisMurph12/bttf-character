@@ -46,3 +46,11 @@ main {
 #options li:hover {
     background-color: #e0e0e0;
 }
+
+#bttf-logo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
