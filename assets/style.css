@@ -18,8 +18,8 @@ main {
 
 #question-container, #result-container {
     text-align: center;
-    margin: auto; /* Center the container */
-    width: 50%; /* Adjust width as needed */
+    margin: auto;
+    width: 50%;
 }
 
 #options {
@@ -34,7 +34,14 @@ main {
     border: 1px solid #ccc;
     background-color: #f9f9f9;
     transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
 }
+
+#options li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
 
 #options li:hover {
     background-color: #e0e0e0;
