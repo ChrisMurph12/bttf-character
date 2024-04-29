@@ -48,9 +48,8 @@ function nextQuestion(answer) {
 }
 
 function showResult(character) {
-    document.getElementById('question-container').style.display = 'none';
+    document.getElementById(`question-container-${currentQuestionIndex}`).style.display = 'none';
     document.getElementById('result-container').style.display = 'block';
     document.getElementById('result').innerText = `You got: ${character.name}`;
     document.getElementById('character-description').innerText = character.description;
 }
-
