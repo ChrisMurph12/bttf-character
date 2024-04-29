@@ -14,23 +14,28 @@ const questions = [
 const characters = {
     "Marty": {
         name: "Marty McFly",
-        description: "You're adventurous and quick-witted, always ready to take on whatever challenge comes your way."
+        description: "You're adventurous and quick-witted, always ready to take on whatever challenge comes your way.",
+        image: "assets/images/marty.mcfly.png"
     },
     "Doc": {
         name: "Doc Brown",
-        description: "You're a brilliant inventor and a bit eccentric, but your heart is always in the right place."
+        description: "You're a brilliant inventor and a bit eccentric, but your heart is always in the right place.",
+        image: "assets/images/doc.brown.png"
     },
     "Biff": {
         name: "Biff Tannen",
-        description: "You're confident and assertive, not afraid to go after what you want, even if it means bending the rules."
+        description: "You're confident and assertive, not afraid to go after what you want, even if it means bending the rules.",
+        image: "assets/images/biff.tannen.png"
     },
     "George": {
         name: "George McFly",
-        description: "You're a bit shy and awkward, but you have a kind heart and a strong sense of loyalty to those you care about."
+        description: "You're a bit shy and awkward, but you have a kind heart and a strong sense of loyalty to those you care about.",
+        image: "assets/images/george.mcfly.png"
     },
     "Lorraine": {
         name: "Lorraine McFly",
-        description: "You're caring and nurturing, with a romantic streak and a love for life's simple pleasures."
+        description: "You're caring and nurturing, with a romantic streak and a love for life's simple pleasures.",
+        image: "assets/images/lorraine.mcfly.png"
     }
 };
 
@@ -48,8 +53,9 @@ function nextQuestion(answer) {
 }
 
 function showResult(character) {
-    document.getElementById(`question-container-${currentQuestionIndex}`).style.display = 'none';
+    document.getElementById('question-container').style.display = 'none';
     document.getElementById('result-container').style.display = 'block';
     document.getElementById('result').innerText = `You got: ${character.name}`;
     document.getElementById('character-description').innerText = character.description;
+    document.getElementById('character-image').src = character.image;
 }
