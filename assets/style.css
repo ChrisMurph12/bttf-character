@@ -12,7 +12,7 @@ header {
     background-color: #f0f0f0;
     text-align: center;
     padding: 20px 0;
-    color: #000000
+    color: #000000;
 }
 
 main {
@@ -44,7 +44,6 @@ main {
 #options li input[type="checkbox"] {
     margin-right: 10px;
 }
-
 
 #options li:hover {
     background-color: #e0e0e0;
