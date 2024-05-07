@@ -45,10 +45,10 @@ function nextQuestion(answer) {
     const currentCharacter = characters[answer];
     document.getElementById(`question-container-${currentQuestionIndex + 1}`).style.display = 'none';
     currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-        document.getElementById(`question-container-${currentQuestionIndex + 1}`).style.display = 'block';
-    } else {
+    if (currentQuestionIndex >= questions.length) {
         showResult(currentCharacter);
+    } else {
+        document.getElementById(`question-container-${currentQuestionIndex + 1}`).style.display = 'block';
     }
 }
 
