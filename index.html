@@ -13,116 +13,27 @@
     </header>
     <main>
         
-        <div id="question-container-1">
-    <p id="question-1">Question 1: What is your favourite mode of transportation?</p>
-    <ul id="options-1">
-        <li onclick="nextQuestion('Marty')"><input type="checkbox"> DeLorean Time Machine</li>
-        <li onclick="nextQuestion('Doc')"><input type="checkbox"> Hoverboard</li>
-        <li onclick="nextQuestion('Biff')"><input type="checkbox"> Pickup Truck</li>
-        <li onclick="nextQuestion('George')"><input type="checkbox"> Bicycle</li>
-        <li onclick="nextQuestion('Lorraine')"><input type="checkbox"> Walking</li>
-    </ul>
-</div>
+        <div id="question-container">
+            <p id="question-text"></p>
+            <ul id="options">
+                <li>
+                   <button id="option1" class="option" data-index="0"></button>
+                </li>
+                <li>
+                    <button id="option2" class="option" data-index="1"></button>
+                 </li>
+                 <li>
+                    <button id="option3" class="option" data-index="2"></button>
+                 </li>
+                 <li>
+                    <button id="option4" class="option" data-index="3"></button>
+                 </li>
+                 <li>
+                    <button id="option5" class="option" data-index="4"></button>
+                 </li>
+            </ul>
+        </div>
 
-<div id="question-container-2" style="display: none;">
-    <p id="question-2">Question 2: What is your favourite era?</p>
-    <ul id="options-2">
-        <li onclick="nextQuestion('Marty')"><input type="checkbox"> 1950s</li>
-        <li onclick="nextQuestion('Doc')"><input type="checkbox"> 1980s</li>
-        <li onclick="nextQuestion('Biff')"><input type="checkbox"> Future</li>
-        <li onclick="nextQuestion('George')"><input type="checkbox"> Wild West</li>
-        <li onclick="nextQuestion('Lorraine')"><input type="checkbox"> I don't have a favorite era</li>
-    </ul>
-</div>
-
-<div id="question-container-3" style="display: none;">
-    <p id="question-3">Question 3: Pick a catchphrase:</p>
-    <ul id="options-3">
-        <li onclick="nextQuestion('Marty')"><input type="checkbox"> Great Scott!</li>
-        <li onclick="nextQuestion('Doc')"><input type="checkbox"> This is heavy!</li>
-        <li onclick="nextQuestion('Biff')"><input type="checkbox"> Make like a tree and get outta here!</li>
-        <li onclick="nextQuestion('George')"><input type="checkbox"> I'm your density.</li>
-        <li onclick="nextQuestion('Lorraine')"><input type="checkbox"> You're my density.</li>
-    </ul>
-</div>
-
-<div id="question-container-4" style="display: none;">
-    <p id="question-4">Question 4: What is your favourite hobby?</p>
-    <ul id="options-4">
-        <li onclick="nextQuestion('Marty')"><input type="checkbox"> Skateboarding</li>
-        <li onclick="nextQuestion('Doc')"><input type="checkbox"> Experimenting</li>
-        <li onclick="nextQuestion('Biff')"><input type="checkbox"> Playing pranks</li>
-        <li onclick="nextQuestion('George')"><input type="checkbox"> Reading</li>
-        <li onclick="nextQuestion('Lorraine')"><input type="checkbox"> Spending time with loved ones</li>
-    </ul>
-</div>
-
-<div id="question-container-5" style="display: none;">
-    <p id="question-5">Question 5: Which adjective best describes you?</p>
-    <ul id="options-5">
-        <li onclick="nextQuestion('Marty')"><input type="checkbox"> Adventurous</li>
-        <li onclick="nextQuestion('Doc')"><input type="checkbox"> Brilliant</li>
-        <li onclick="nextQuestion('Biff')"><input type="checkbox"> Confident</li>
-        <li onclick="nextQuestion('George')"><input type="checkbox"> Shy</li>
-        <li onclick="nextQuestion('Lorraine')"><input type="checkbox"> Caring</li>
-    </ul>
-</div>
-
-<div id="question-container-6" style="display: none;">
-    <p id="question-6">Question 6: Choose a location to hang out:</p>
-    <ul id="options-6">
-        <li onclick="nextQuestion('Marty')"><input type="checkbox"> Mall</li>
-        <li onclick="nextQuestion('Doc')"><input type="checkbox"> Laboratory</li>
-        <li onclick="nextQuestion('Biff')"><input type="checkbox"> Tannen's Pleasure Paradise</li>
-        <li onclick="nextQuestion('George')"><input type="checkbox"> Library</li>
-        <li onclick="nextQuestion('Lorraine')"><input type="checkbox"> Home</li>
-    </ul>
-</div>
-
-<div id="question-container-7" style="display: none;">
-    <p id="question-7">Question 7: What's your favourite type of music?</p>
-    <ul id="options-7">
-        <li onclick="nextQuestion('Marty')"><input type="checkbox"> Rock 'n' Roll</li>
-        <li onclick="nextQuestion('Doc')"><input type="checkbox"> Classical</li>
-        <li onclick="nextQuestion('Biff')"><input type="checkbox"> Heavy Metal</li>
-        <li onclick="nextQuestion('George')"><input type="checkbox"> Jazz</li>
-        <li onclick="nextQuestion('Lorraine')"><input type="checkbox"> Pop</li>
-    </ul>
-</div>
-
-<div id="question-container-8" style="display: none;">
-    <p id="question-8">Question 8: Pick a snack:</p>
-    <ul id="options-8">
-        <li onclick="nextQuestion('Marty')"><input type="checkbox"> Pizza</li>
-        <li onclick="nextQuestion('Doc')"><input type="checkbox"> Popcorn</li>
-        <li onclick="nextQuestion('Biff')"><input type="checkbox"> Beef jerky</li>
-        <li onclick="nextQuestion('George')"><input type="checkbox"> Chocolate</li>
-        <li onclick="nextQuestion('Lorraine')"><input type="checkbox"> Ice cream</li>
-    </ul>
-</div>
-
-<div id="question-container-9" style="display: none;">
-    <p id="question-9">Question 9: What's your dream job?</p>
-    <ul id="options-9">
-        <li onclick="nextQuestion('Marty')"><input type="checkbox"> Musician</li>
-        <li onclick="nextQuestion('Doc')"><input type="checkbox"> Inventor</li>
-        <li onclick="nextQuestion('Biff')"><input type="checkbox"> Business tycoon</li>
-        <li onclick="nextQuestion('George')"><input type="checkbox"> Writer</li>
-        <li onclick="nextQuestion('Lorraine')"><input type="checkbox"> Parent</li>
-    </ul>
-</div>
-
-<div id="question-container-10" style="display: none;">
-    <p id="question-10">Question 10: What's your go-to outfit?</p>
-    <ul id="options-10">
-        <li onclick="nextQuestion('Marty')"><input type="checkbox"> Jeans and a t-shirt</li>
-        <li onclick="nextQuestion('Doc')"><input type="checkbox"> Lab coat and goggles</li>
-        <li onclick="nextQuestion('Biff')"><input type="checkbox"> Leather jacket</li>
-        <li onclick="nextQuestion('George')"><input type="checkbox"> Sweater vest</li>
-        <li onclick="nextQuestion('Lorraine')"><input type="checkbox"> Dress</li>
-    </ul>
-</div>
-        
         
         <div id="result-container" style="display: none;">
             <p id="result"></p>
@@ -133,6 +44,6 @@
     
     <img src="assets/images/bttf-logo.png" alt="back to the future logo" id="bttf-logo">
     
-    <script src="script.js"></script>
+    <script src="./assets/script2.js"></script>
 </body>
 </html>
