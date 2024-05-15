@@ -34,11 +34,10 @@ main {
     cursor: pointer;
     padding: 10px;
     margin: 5px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s;
+   
+    
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 #options li input[type="checkbox"] {
@@ -47,6 +46,12 @@ main {
 
 #options li:hover {
     background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+#options li button {
+    padding: 10px;
+    cursor: pointer;
 }
 
 #bttf-logo {
