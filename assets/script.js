@@ -2,52 +2,23 @@ const questions = [
     {
         text: "What is your favourite mode of transportation?",
         options:[
-            {
-                text:'DeLorean', char: 'Marty'},
-            {
-                text:'Hoverboard', char: 'Doc'
-            },
-            {
-                text:'Pickup Truck', char: 'Biff'
-            },
-            {
-                text:'Bicycle', char: 'George'
-            },
-            {
-                text:'Walking', char: 'Lorraine'
-            },
-           
+            {text: 'DeLorean', char: 'Marty'},
+            {text: 'Hoverboard', char: 'Doc'},
+            {text: 'Pickup Truck', char: 'Biff'},
+            {text: 'Bicycle', char: 'George'},
+            {text: 'Walking', char: 'Lorraine'}
         ]
     },
     {
         text: "What is your favourite era?",
         options:[
-            {
-                text:'1950s', char: 'Marty'},
-            {
-                text:'1980s', char: 'Doc'
-            },
-            {
-                text:'Future', char: 'Biff'
-            },
-            {
-                text:'Wild West', char: 'George'
-            },
-            {
-                text:"don't have a favorite era", char: 'Lorraine'
-            },
-           
+            {text: '1950s', char: 'Marty'},
+            {text: '1980s', char: 'Doc'},
+            {text: 'Future', char: 'Biff'},
+            {text: 'Wild West', char: 'George'},
+            {text: "don't have a favorite era", char: 'Lorraine'}
         ]
-    },
-    
-    "Pick a catchphrase:",
-    "What is your favourite hobby?",
-    "Which adjective best describes you?",
-    "Choose a location to hang out:",
-    "What's your favourite type of music?",
-    "Pick a snack:",
-    "What's your dream job?",
-    "What's your go-to outfit?"
+    }
 ];
 
 const characters = {
@@ -78,51 +49,13 @@ const characters = {
     }
 };
 
-function showResult(character) {
-    document.getElementById(`question-container-${currentQuestionIndex}`).style.display = 'none';
-    document.getElementById('result-container').style.display = 'block';
-    document.getElementById('result').innerText = `You got: ${character.name}`;
-    document.getElementById('character-description').innerText = character.description;
-    document.getElementById('character-image').src = character.image;
-}
-
-
-
-function displayQuestion(question){
+function displayQuestion(question) {
     document.getElementById('question-text').innerText = question.text;
     document.getElementById('option1').innerText = question.options[0].text;
     document.getElementById('option2').innerText = question.options[1].text;
     document.getElementById('option3').innerText = question.options[2].text;
     document.getElementById('option4').innerText = question.options[3].text;
     document.getElementById('option5').innerText = question.options[4].text;
-
-}
-
-let currentQuestionIndex = 0;
-let currentQuestion = null;
-const maxQuestions = 2;
-let blockedClick = false;
-
-function nextQuestion(event){
-    if (blockedClick === false){
-        blockedClick = true;
-        const clickedOption = parseInt(event.target.getAttribute('data-index'));
-        const selectedChar = currentQuestion.options[clickedOption].char;
-        if(currentQuestionIndex < maxQuestions){
-            currentQuestion = questions[currentQuestionIndex];
-            setTimeout(function(){
-                displayQuestion(currentQuestion);
-                currentQuestionIndex = currentQuestionIndex + 1;
-                blockedClick = false;
-            }, 2000);
-        }
-        else{
-            setTimeout(function(){
-                showResult(characters['Marty']);
-            }, 2000);
-        }
-    }
-   
 }
 
 function showResult(character) {
@@ -133,18 +66,39 @@ function showResult(character) {
     document.getElementById('character-image').src = character.image;
 }
 
+let currentQuestionIndex = 0;
+const maxQuestions = questions.length;
+let blockedClick = false;
 
-document.querySelectorAll('button.option').forEach(function(button){
+function nextQuestion(event) {
+    if (!blockedClick) {
+        blockedClick = true;
+        const clickedOption = parseInt(event.target.getAttribute('data-index'));
+        const selectedChar = questions[currentQuestionIndex].options[clickedOption].char;
+        
+        if (currentQuestionIndex < maxQuestions - 1) {
+            currentQuestionIndex++;
+            setTimeout(() => {
+                displayQuestion(questions[currentQuestionIndex]);
+                blockedClick = false;
+            }, 2000);
+        } else {
+            setTimeout(() => {
+                showResult(characters[selectedChar]);
+            }, 2000);
+        }
+    }
+}
+
+document.querySelectorAll('button.option').forEach(button => {
     button.addEventListener('click', nextQuestion);
-})
+});
 
-
-function startGame(){
+function startGame() {
     currentQuestionIndex = 0;
-    currentQuestion = null;
-    currentQuestion = questions[currentQuestionIndex];
-    displayQuestion(currentQuestion);
-    currentQuestionIndex = currentQuestionIndex + 1;
+    document.getElementById('question-container').style.display = 'block';
+    document.getElementById('result-container').style.display = 'none';
+    displayQuestion(questions[currentQuestionIndex]);
 }
 
 startGame();
