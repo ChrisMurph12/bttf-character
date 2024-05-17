@@ -2,8 +2,8 @@ const questions = [
     {
         text: "What is your favourite mode of transportation?",
         options:[
-            {text: 'DeLorean', char: 'Marty'},
-            {text: 'Hoverboard', char: 'Doc'},
+            {text: 'Hoverboard', char: 'Marty'},
+            {text: 'DeLorean', char: 'Doc'},
             {text: 'Pickup Truck', char: 'Biff'},
             {text: 'Bicycle', char: 'George'},
             {text: 'Walking', char: 'Lorraine'}
@@ -12,11 +12,81 @@ const questions = [
     {
         text: "What is your favourite era?",
         options:[
-            {text: '1950s', char: 'Marty'},
-            {text: '1980s', char: 'Doc'},
+            {text: '1980s', char: 'Marty'},
+            {text: 'Wild West', char: 'Doc'},
             {text: 'Future', char: 'Biff'},
-            {text: 'Wild West', char: 'George'},
+            {text: '1950s', char: 'George'},
             {text: "don't have a favorite era", char: 'Lorraine'}
+        ]
+    }
+     {
+        text: "Pick a catchphrase",
+        options:[
+            {text: 'This is heavy!', char: 'Marty'},
+            {text: 'Great Scott!', char: 'Doc'},
+            {text: 'Hey Butthead!', char: 'Biff'},
+            {text: 'Im your Density', char: 'George'},
+            {text: 'Youre my Destiny', char: 'Lorraine'}
+        ]
+    }
+ {
+        text: "What is your favourite hobby?",
+        options:[
+            {text: 'Sksteboarding', char: 'Marty'},
+            {text: 'Being creative', char: 'Doc'},
+            {text: 'Driving', char: 'Biff'},
+            {text: 'Reading', char: 'George'},
+            {text: 'I dont have one', char: 'Lorraine'}
+        ]
+    }
+ {
+        text: "What adjective best describes you?",
+        options:[
+            {text: 'Adventurous', char: 'Marty'},
+            {text: 'Smart', char: 'Doc'},
+            {text: 'Confident', char: 'Biff'},
+            {text: 'Shy', char: 'George'},
+            {text: 'Caring', char: 'Lorraine'}
+        ]
+    }
+ {
+        text: "What is your favourite music genre?",
+        options:[
+            {text: 'Rock n Roll', char: 'Marty'},
+            {text: 'Classical', char: 'Doc'},
+            {text: 'Heavy Metal', char: 'Biff'},
+            {text: 'Jazz', char: 'George'},
+            {text: 'Pop', char: 'Lorraine'}
+        ]
+    }
+ {
+        text: "Pick a snack",
+        options:[
+            {text: 'Pizza', char: 'Marty'},
+            {text: 'Popcorn', char: 'Doc'},
+            {text: 'Beef', char: 'Biff'},
+            {text: 'Chocolate', char: 'George'},
+            {text: 'Ice Cream', char: 'Lorraine'}
+        ]
+    }
+ {
+        text: "What is your go-to outfit?",
+        options:[
+            {text: 'Jeans and a T-Shirt', char: 'Marty'},
+            {text: 'Lab coat and goggles', char: 'Doc'},
+            {text: 'Leather jacket', char: 'Biff'},
+            {text: 'Sweater vest', char: 'George'},
+            {text: 'Dress', char: 'Lorraine'}
+        ]
+    }
+ {
+        text: "What is your dream job?",
+        options:[
+            {text: 'Musician', char: 'Marty'},
+            {text: 'Inventor', char: 'Doc'},
+            {text: 'Businessman', char: 'Biff'},
+            {text: 'Writer', char: 'George'},
+            {text: 'Parent', char: 'Lorraine'}
         ]
     }
 ];
