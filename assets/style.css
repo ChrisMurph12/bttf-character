@@ -34,14 +34,8 @@ main {
     cursor: pointer;
     padding: 10px;
     margin: 5px;
-   
-    
     display: flex;
     justify-content: center;
-}
-
-#options li input[type="checkbox"] {
-    margin-right: 10px;
 }
 
 #options li:hover {
