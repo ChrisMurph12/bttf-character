@@ -18,7 +18,7 @@ const questions = [
             {text: '1950s', char: 'George'},
             {text: "don't have a favorite era", char: 'Lorraine'}
         ]
-    }
+    },
      {
         text: "Pick a catchphrase",
         options:[
@@ -28,7 +28,7 @@ const questions = [
             {text: 'Im your Density', char: 'George'},
             {text: 'Youre my Destiny', char: 'Lorraine'}
         ]
-    }
+    },
  {
         text: "What is your favourite hobby?",
         options:[
@@ -38,7 +38,7 @@ const questions = [
             {text: 'Reading', char: 'George'},
             {text: 'I dont have one', char: 'Lorraine'}
         ]
-    }
+    },
  {
         text: "What adjective best describes you?",
         options:[
@@ -48,7 +48,7 @@ const questions = [
             {text: 'Shy', char: 'George'},
             {text: 'Caring', char: 'Lorraine'}
         ]
-    }
+    },
  {
         text: "What is your favourite music genre?",
         options:[
@@ -58,7 +58,7 @@ const questions = [
             {text: 'Jazz', char: 'George'},
             {text: 'Pop', char: 'Lorraine'}
         ]
-    }
+    },
  {
         text: "Pick a snack",
         options:[
@@ -68,7 +68,7 @@ const questions = [
             {text: 'Chocolate', char: 'George'},
             {text: 'Ice Cream', char: 'Lorraine'}
         ]
-    }
+    },
  {
         text: "What is your go-to outfit?",
         options:[
@@ -78,7 +78,7 @@ const questions = [
             {text: 'Sweater vest', char: 'George'},
             {text: 'Dress', char: 'Lorraine'}
         ]
-    }
+    },
  {
         text: "What is your dream job?",
         options:[
@@ -88,7 +88,7 @@ const questions = [
             {text: 'Writer', char: 'George'},
             {text: 'Parent', char: 'Lorraine'}
         ]
-    }
+    },
 ];
 
 const characters = {
