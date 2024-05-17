@@ -1,39 +1,86 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Which Back to the Future Character are you?
 
-Welcome,
+This is a straightforward, single page quiz website where users can answer the questions based on their own character traits, and get a character result of the character they most resemble from the Back to the Future film franchise.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The live link to the site can be found here - [Which Back to the Future Character are you?](https://chrismurph12.github.io/bttf-character/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Site Owner Goals
+- Create a fun little quiz for fans of the Franchise to play around with and see who they get.
+- As a huge Back to the Future fan, it was a very easy film to think of the questions and answers for.
 
-## Codeanywhere Reminders
+## User Stories
+- ### First Time User
+  - As a first time user I want to complete the quiz and see which character from the film series I'm most like.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Returning User
+  - As a returning user I want to answer the questions in a different way to see what other results I can get.
+  - As a returning user I want to find out how many potential characters you can get as a result of answering the questions in different ways.
 
-`python3 -m http.server`
+## Design
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Imagery
+There are only 6 images used on the whole site. The back to the future logo, and then a picture of each possible character, Marty, Doc, Biff, George, Lorraine. You would only see the character picture after you complete the quiz and get your result.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+### Colours
+The colour scheme is black and white. I wanted to keep it simple, and the Back to the Future Logo on the page stands out much better against a black background compared to a white background.
 
-`http_server`
+### Fonts
+The Montserrat font is the main font used throughout the whole website. This font was imported via [Google Fonts](https://fonts.google.com/). I'm using Sans Serif as a backup font, in case for any reason the main font isn't being imported into the site correctly.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Validator Testing
+- #### HTML
+  
+- #### CSS
+    
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Browser Testing
+- The Website was tested on Google Chrome, Firefox, Microsoft Edge, Safari browsers with no issues noted.
 
-To log into the Heroku toolbelt CLI:
+### Device Testing
+- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone 8, iPhoneX and iPad to ensure responsiveness on various screen sizes. The website performed as intended.
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Known Bugs
+None currently.
 
----
+## Technologies Used
 
-Happy coding!
+### Languages
+- HTML5
+- CSS
+- Javascript
+
+### Frameworks - Libraries - Programs Used
+
+
+
+## Deployment
+
+The project was deployed using GitHub pages. The steps to deploy using GitHub pages are:
+
+1. Go to the repository on GitHub.com
+2. Select 'Settings' near the top of the page.
+3. Select 'Pages' from the menu bar on the left of the page.
+4. Under 'Source' select the 'Branch' dropdown menu and select the main branch.
+5. Once selected, click the 'Save'.
+6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
+
+## Credits
+
+### Content
+All questions were created by me, and the character images and Back To The Future logo were sourced from google. Source websites below.
+
+### Media
+
+
+
+### Resources Used
+
+
+
+## Acknowledgments
+My mentor Antonio for his support and advice.
+
+
+The Code Institute slack community for their quick responses and very helpful feedback!
