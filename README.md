@@ -40,6 +40,11 @@ The Montserrat font is the main font used throughout the whole website. This fon
 - #### JavaScript
 - There were a few warnings in the Javascript validator, but no major issues.
 - [JavaScript Validator Results](https://jshint.com)
+
+- #### Accessibility 
+    - The site achieved a Lighthouse accessibility score of 100% which confirms that the colours and fonts chosen are easy to read and accessible
+
+![Lighthouse score](assets/images/bttf-lighthouse-score.png)
     
 
 ### Browser Testing
