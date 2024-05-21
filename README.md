@@ -84,16 +84,25 @@ The project was deployed using GitHub pages. The steps to deploy using GitHub pa
 ### Content
 All questions were created by me, and the character images and Back To The Future logo were sourced from google. Source websites below.
 
+[Marty Mcfly](https://www.smithsonianmag.com/smart-news/great-scott-marty-mcflys-hoverboard-sells-for-500000-at-auction-180979076/)
+
+[Doc Brown](https://www.express.co.uk/entertainment/films/1239160/Back-to-the-Future-theory-Doc-Brown-time-travel-Marty-McFly)
+
+[Lorraine McFly](https://www.backtothefuture.com/cast/lea-thompson)
+
+[George McFly](https://backtothefuture.fandom.com/wiki/George_McFly)
+
+[Biff Tannen](https://backtothefuture.fandom.com/wiki/Biff_Tannen)
+
+[Logo](https://www.vecteezy.com/vector-art/25278401-back-to-the-future-logo)
+
 ### Media
-
-
+All media used is acknowledged above from their respective source websites.
 
 ### Resources Used
-
+Code institute training courses for information on how to correctly layout the code.
 
 
 ## Acknowledgments
-My mentor Antonio for his support and advice.
-
-
+My mentor Antonio for his continuous support and advice.
 The Code Institute slack community for their quick responses and very helpful feedback!
