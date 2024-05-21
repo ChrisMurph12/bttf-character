@@ -30,8 +30,16 @@ The Montserrat font is the main font used throughout the whole website. This fon
 
 ### Validator Testing
 - #### HTML
+  There was 1 issue found, that the src "" was empty. It has to be empty as the image is dependant on the user's answers.
+  [HTML Validator Results](https://validator.w3.org/nu/#file)
   
 - #### CSS
+- There were no issues found in the CSS code.
+- [CSS Validator Results](https://jigsaw.w3.org/css-validator/validator)
+
+- #### JavaScript
+- There were a few warnings in the Javascript validator, but no major issues.
+- [JavaScript Validator Results](https://jshint.com)
     
 
 ### Browser Testing
